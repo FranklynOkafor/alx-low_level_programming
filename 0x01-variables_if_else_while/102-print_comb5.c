@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+/**
+ * main - Writes 01 - 99
+ * Avoid: empty parameter list or main.
+ *
+ * Description: Writes all unique combinations
+ * of 2 digit numbers
+ *
+ * Return: 0 for sucess
+ */
+int main(void)
+{
+	int i, j;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		for (j = '0'; j <= '9'; j++)
+		{
+	       		if (i < j)
+			{
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
+
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
+
+
