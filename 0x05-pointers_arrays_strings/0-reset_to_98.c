@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * reset_to_98 -  takes a pointer to an int as parameter
- * and updates the value it points to to 98.
- * @n: the factor of consideration
- * Owned by Dongo Algol
+ * reset_to_98 - takes the pointer and updates the value
+ * @n: int to check
+ * DONGO's code
+ * Return: 0 is success
  */
+
 void reset_to_98(int *n)
 {
 	*n = 98;
